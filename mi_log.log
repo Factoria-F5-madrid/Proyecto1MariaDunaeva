@@ -1,0 +1,27 @@
+2025-07-02 12:29:53,708 - INFO - Iniciando la función main().
+2025-07-02 12:29:53,709 - INFO - Mostrando mensaje de bienvenida.
+2025-07-02 12:29:53,710 - DEBUG - Mensaje de bienvenida mostrado correctamente.
+2025-07-02 12:30:04,806 - DEBUG - Opción seleccionada en el menú principal: I
+2025-07-02 12:30:04,807 - INFO - Trayecto iniciado.
+2025-07-02 12:30:09,004 - DEBUG - Estado introducido: M
+2025-07-02 12:30:09,004 - DEBUG - Calculando tarifa. Tiempo: 4.198779344558716, En movimiento: True
+2025-07-02 12:30:09,004 - DEBUG - Tarifa calculada: 0.2099389672279358
+2025-07-02 12:30:09,006 - INFO - Taxi en movimiento. Tarifa acumulada: 0.21 euros
+2025-07-02 12:30:13,067 - DEBUG - Estado introducido: P
+2025-07-02 12:30:13,067 - DEBUG - Calculando tarifa. Tiempo: 4.198779344558716, En movimiento: False
+2025-07-02 12:30:13,074 - DEBUG - Tarifa calculada: 0.08397558689117432
+2025-07-02 12:30:13,074 - INFO - Taxi parado. Tarifa acumulada: 0.29 euros
+2025-07-02 12:30:16,392 - DEBUG - Estado introducido: F
+2025-07-02 12:30:16,392 - DEBUG - Calculando tarifa. Tiempo: 4.198779344558716, En movimiento: False
+2025-07-02 12:30:16,392 - DEBUG - Tarifa calculada: 0.08397558689117432
+2025-07-02 12:30:16,392 - INFO - Trayecto finalizado. Tarifa total: 0.38 euros
+2025-07-02 12:30:16,392 - INFO - Trayecto iniciado. Total recaudado hasta ahora: 0.38 euros
+2025-07-02 12:30:20,016 - DEBUG - Opción seleccionada en el menú principal: S
+2025-07-02 12:30:20,016 - INFO - Saliendo del programa. Total recaudado: 0.38 euros
+2025-07-02 12:30:20,017 - INFO - Finalizando la función main().
+2025-07-02 12:30:20,202 - INFO - Iniciando la función main().
+2025-07-02 12:30:20,202 - INFO - Mostrando mensaje de bienvenida.
+2025-07-02 12:30:20,206 - DEBUG - Mensaje de bienvenida mostrado correctamente.
+2025-07-02 12:30:25,615 - DEBUG - Opción seleccionada en el menú principal: S
+2025-07-02 12:30:25,616 - INFO - Saliendo del programa. Total recaudado: 0.00 euros
+2025-07-02 12:30:25,616 - INFO - Finalizando la función main().

@@ -59,44 +59,53 @@ def iniciar_trayecto():
             tarifa_acumulada += calcular_tarifa(tiempo_transcurrido, en_movimiento)
             print(f"Trayecto finalizado. Tarifa total: {tarifa_acumulada:.2f} euros")
             # .2f formatea el valor de la variable tarifa_acumulada para que se muestre con dos dígitos decimales. 
+            logging.info(f"Trayecto finalizado. Tarifa total: {tarifa_acumulada:.2f} euros")  # Registro de información
             return tarifa_acumulada
+        
         if estado == 'P':
             en_movimiento = False
             tiempo_transcurrido == time.time() - tiempo_inicio
             tarifa_acumulada += calcular_tarifa(tiempo_transcurrido, en_movimiento)
             tiempo_inicio = time.time() #Reiniciar el tiempo de inicio para la tarifa parada
             print(f"Taxi parado. Tarifa acumulada: {tarifa_acumulada: .2f} euros")
+            logging.info(f"Taxi parado. Tarifa acumulada: {tarifa_acumulada:.2f} euros")  # Registro de información
+        
         elif estado == 'M':
             en_movimiento = True
             tiempo_transcurrido = time.time() - tiempo_inicio
             tarifa_acumulada += calcular_tarifa(tiempo_transcurrido, en_movimiento)
             tiempo_inicio = time.time() #Reiniciar el tiempo de inicio para la tarifa en movimniento
             print(f"Taxi en movimiento. Tarifa acumulada: {tarifa_acumulada:.2f} euros")
+            logging.info(f"Taxi en movimiento. Tarifa acumulada: {tarifa_acumulada:.2f} euros")  # Registro de información
+        
         else:
             print("Opción inválida. Por favor, introduce 'P', 'M' o 'f'.")
+            logging.warning("Opción inválida en el estado del taxi.")  # Registro de advertencia
 
 def main():
     #Función principal que controla el flujo del programa
+    logging.info("Iniciando la función main().")  # Registro de información
     mostrar_bienvenida()
     total_recaudado = 0
 
     while True:
         opcion = input("¿Qué deseas hacer? (I)niciar trayecto, (S)alir: ").upper()
+        logging.debug(f"Opción seleccionada en el menú principal: {opcion}")  # Registro de depuración
 
         if opcion == 'I':
             total_trayecto = iniciar_trayecto()
             total_recaudado += total_trayecto
+            logging.info(f"Trayecto iniciado. Total recaudado hasta ahora: {total_recaudado:.2f} euros")  # Registro de información
         elif opcion == 'S':
             print(f"Total recaudado hoy: {total_recaudado: .2f} euros")
             print("¡Gracias por usar nuestro Taxímetro!")
+            logging.info(f"Saliendo del programa. Total recaudado: {total_recaudado:.2f} euros")  # Registro de información
             break
+        else:
+            logging.warning("Opción inválida en el menú principal.")  # Registro de advertencia
+    logging.info("Finalizando la función main().")  # Registro de información
 
 if __name__ == "__main__":
     main()
 
 
-
-
-
-
-  
