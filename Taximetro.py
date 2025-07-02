@@ -1,4 +1,5 @@
-fhfimport logging
+import logging
+import time
 
 logging.basicConfig(
     level=logging.DEBUG,  # Nivel de logging (DEBUG, INFO, WARNING, ERROR, CRITICAL)
@@ -13,10 +14,11 @@ WARNING: Indica que algo inesperado ocurrió, o que hay un problema en el futuro
 ERROR: Debido a un problema más serio, el software no ha podido realizar una función.
 CRITICAL: Un error muy grave, que puede impedir que el programa continúe ejecutándose.
 """
-import time
+
 
 def mostrar_bienvenida():
     #Muestra un mensaje de bienvenida y explica el funcionamiento del programa.
+    logging.info("Mostrando mensaje de bienvenida.")  # Registro de información
     print("¡Bienvenido a nuestro Taxímetro! 🚕")
     print("-" * 30)
     #Imprime una línea de guiones
@@ -26,14 +28,17 @@ def mostrar_bienvenida():
     print(" - Parado: 0,02 euros por segundo")
     print(" - En movimiento: 0,05 euros por segundo")
     print("-" * 30)
+    logging.debug("Mensaje de bienvenida mostrado correctamente.")  # Registro de depuración
 
 def calcular_tarifa(tiempo_segundos, en_movimiento):
     #Calcula la tarifa en base del tiempo y el estado
+    logging.debug(f"Calculando tarifa. Tiempo: {tiempo_segundos}, En movimiento: {en_movimiento}")  # Registro de depuración
     if en_movimiento:
         tarifa_por_segundo = 0.05
     else: 
         tarifa_por_segundo = 0.02
     tarifa_total = tiempo_segundos * tarifa_por_segundo
+    logging.debug(f"Tarifa calculada: {tarifa_total}")  # Registro de depuración
     return tarifa_total
 
 def iniciar_trayecto():
@@ -42,10 +47,12 @@ def iniciar_trayecto():
     #Guardamos la hora del inicio en la variable
     en_movimiento = False #Al principio, el taxi está parado
     tarifa_acumulada = 0
+    logging.info("Trayecto iniciado.")  # Registro de información
 
     while True:
         estado = input ("¿El taxi está (P)arado o en (M)ovimiento? (o 'f' para finalizar): ").upper()
         #.upper convierte las letras introducidas en mayúsculas
+        logging.debug(f"Estado introducido: {estado}")  # Registro de depuración
         
         if estado == 'F':
             tiempo_transcurrido == time.time() - tiempo_inicio
@@ -86,6 +93,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
 
 
 
