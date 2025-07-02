@@ -1,0 +1,9 @@
+# Ignorar archivos de configuración
+*.env
+
+# Ignorar carpetas de dependencias
+venv/
+node_modules/
+
+# Ignorar archivos temporales
+*.log
