@@ -1,6 +1,29 @@
-# Taxímetro en Python
+# 🚕 Proyecto Python: Taxímetro Digital
+![Taxímetro](image.png)
 
-## Descripción
+## 📋Enlace al tablero Kanban´
+
+https://trello.com/b/0iNvlW2o/proyecto-taximetro
+
+## 📝Descripción para público no técnico
+
+**¿Cansado de calcular tarifas de taxi manualmente? ¡Nuestro Taxímetro digital es la solución!**
+
+Imagina un sistema sencillo e intuitivo que calcula automáticamente las tarifas de tus viajes en taxi, ¡sin errores ni complicaciones! Simplemente indica si el taxi está parado o en movimiento, y el programa calcula la tarifa total en base al tiempo transcurrido.
+
+**¿Cómo funciona?**
+
+Es muy fácil de usar. El programa te guiará paso a paso, preguntándote si el taxi está parado o en movimiento. Se basa en tarifas por segundo: una tarifa para cuando el taxi está parado y otra para cuando está en movimiento. Al finalizar el viaje, el programa te mostrará la tarifa total. 
+
+**Beneficios Clave:**
+
+*  **Precisión:** Olvídate de los cálculos manuales y los errores. ¡Nuestro Taxímetro digital garantiza la precisión en cada tarifa!
+*  **Eficiencia:** Calcula las tarifas en segundos, ahorrándote tiempo y esfuerzo.
+*  **Fácil de usar:** Su interfaz intuitiva hace que sea accesible para cualquier persona, sin necesidad de conocimientos técnicos.
+
+**¡Nuestro Taxímetro digital es la herramienta perfecta para cualquier taxista que busca optimizar su negocio y mejorar su eficiencia!**
+
+## Descripción técnica
 
 Este programa simula un taxímetro. Permite calcular las tarifas de un trayecto basándose en el tiempo que el taxi está parado o en movimiento.  El programa utiliza el módulo `logging` de Python para registrar eventos y facilitar la depuración.
 
