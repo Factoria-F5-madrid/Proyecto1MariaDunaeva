@@ -25,3 +25,85 @@
 2025-07-02 12:30:25,615 - DEBUG - Opción seleccionada en el menú principal: S
 2025-07-02 12:30:25,616 - INFO - Saliendo del programa. Total recaudado: 0.00 euros
 2025-07-02 12:30:25,616 - INFO - Finalizando la función main().
+2025-07-07 13:34:00,409 - INFO - Iniciando la función main().
+2025-07-07 13:34:00,410 - INFO - Mostrando mensaje de bienvenida.
+2025-07-07 13:34:00,411 - DEBUG - Mensaje de bienvenida mostrado correctamente.
+2025-07-07 13:34:04,407 - DEBUG - Opción seleccionada en el menú principal: I
+2025-07-07 13:34:04,408 - INFO - Trayecto iniciado.
+2025-07-07 13:34:07,341 - DEBUG - Estado introducido: P
+2025-07-07 13:34:07,347 - DEBUG - Calculando tarifa. Tiempo: 2.9346578121185303, En movimiento: False
+2025-07-07 13:34:07,347 - DEBUG - Tarifa calculada: 0.058693156242370606
+2025-07-07 13:34:07,348 - INFO - Taxi parado. Tarifa acumulada: 0.06 euros
+2025-07-07 13:34:08,600 - DEBUG - Estado introducido: M
+2025-07-07 13:34:08,600 - DEBUG - Calculando tarifa. Tiempo: 1.2536687850952148, En movimiento: True
+2025-07-07 13:34:08,600 - DEBUG - Tarifa calculada: 0.06268343925476075
+2025-07-07 13:34:08,601 - INFO - Taxi en movimiento. Tarifa acumulada: 0.12 euros
+2025-07-07 13:34:09,777 - DEBUG - Estado introducido: P
+2025-07-07 13:34:09,778 - DEBUG - Calculando tarifa. Tiempo: 1.176706075668335, En movimiento: False
+2025-07-07 13:34:09,778 - DEBUG - Tarifa calculada: 0.0235341215133667
+2025-07-07 13:34:09,778 - INFO - Taxi parado. Tarifa acumulada: 0.14 euros
+2025-07-07 13:34:10,941 - DEBUG - Estado introducido: M
+2025-07-07 13:34:10,941 - DEBUG - Calculando tarifa. Tiempo: 1.163027048110962, En movimiento: True
+2025-07-07 13:34:10,941 - DEBUG - Tarifa calculada: 0.0581513524055481
+2025-07-07 13:34:10,941 - INFO - Taxi en movimiento. Tarifa acumulada: 0.20 euros
+2025-07-07 13:34:13,067 - DEBUG - Estado introducido: F
+2025-07-07 13:34:13,068 - DEBUG - Calculando tarifa. Tiempo: 2.1272151470184326, En movimiento: True
+2025-07-07 13:34:13,068 - DEBUG - Tarifa calculada: 0.10636075735092164
+2025-07-07 13:34:13,068 - INFO - Trayecto finalizado. Tarifa total: 0.31 euros
+2025-07-07 13:34:13,069 - INFO - Trayecto guardado en historial correctamente.
+2025-07-07 13:34:13,069 - INFO - Trayecto iniciado. Total recaudado hasta ahora: 0.31 euros
+2025-07-07 13:34:14,540 - DEBUG - Opción seleccionada en el menú principal: S
+2025-07-07 13:34:14,541 - INFO - Saliendo del programa. Total recaudado: 0.31 euros
+2025-07-07 13:34:14,541 - INFO - Finalizando la función main().
+2025-07-07 13:44:40,780 - INFO - Iniciando la función main().
+2025-07-07 13:44:40,780 - INFO - Mostrando mensaje de bienvenida.
+2025-07-07 13:44:40,782 - DEBUG - Mensaje de bienvenida mostrado correctamente.
+2025-07-07 13:44:47,824 - DEBUG - Opción seleccionada en el menú principal: I
+2025-07-07 13:44:47,825 - INFO - Trayecto iniciado.
+2025-07-07 13:44:50,644 - DEBUG - Estado introducido: M
+2025-07-07 13:44:50,645 - DEBUG - Calculando tarifa. Tiempo: 2.819674253463745, En movimiento: True
+2025-07-07 13:44:50,645 - DEBUG - Tarifa calculada: 0.14098371267318727
+2025-07-07 13:44:50,646 - INFO - Taxi en movimiento. Tarifa acumulada: 0.14 euros
+2025-07-07 13:44:52,285 - DEBUG - Estado introducido: P
+2025-07-07 13:44:52,285 - DEBUG - Calculando tarifa. Tiempo: 1.6404032707214355, En movimiento: False
+2025-07-07 13:44:52,285 - DEBUG - Tarifa calculada: 0.03280806541442871
+2025-07-07 13:44:52,286 - INFO - Taxi parado. Tarifa acumulada: 0.17 euros
+2025-07-07 13:44:58,615 - DEBUG - Estado introducido: F
+2025-07-07 13:44:58,616 - DEBUG - Calculando tarifa. Tiempo: 6.331043243408203, En movimiento: False
+2025-07-07 13:44:58,616 - DEBUG - Tarifa calculada: 0.12662086486816407
+2025-07-07 13:44:58,616 - INFO - Trayecto finalizado. Tarifa total: 0.30 euros
+2025-07-07 13:44:58,617 - INFO - Trayecto guardado en historial correctamente.
+2025-07-07 13:44:58,617 - INFO - Trayecto iniciado. Total recaudado hasta ahora: 0.30 euros
+2025-07-07 13:45:01,298 - DEBUG - Opción seleccionada en el menú principal: S
+2025-07-07 13:45:01,298 - INFO - Saliendo del programa. Total recaudado: 0.30 euros
+2025-07-07 13:45:01,299 - INFO - Finalizando la función main().
+2025-07-07 14:20:11,943 - INFO - Iniciando la función main().
+2025-07-07 14:20:11,944 - INFO - Mostrando mensaje de bienvenida.
+2025-07-07 14:20:11,946 - DEBUG - Mensaje de bienvenida mostrado correctamente.
+2025-07-07 14:20:24,854 - INFO - Tarifas configuradas: Parado = 0.04, Movimiento = 0.4
+2025-07-07 14:20:27,442 - DEBUG - Opción seleccionada en el menú principal: I
+2025-07-07 14:20:27,442 - INFO - Trayecto iniciado.
+2025-07-07 14:20:31,880 - DEBUG - Estado introducido: P
+2025-07-07 14:23:16,035 - INFO - Iniciando la función main().
+2025-07-07 14:23:16,035 - INFO - Mostrando mensaje de bienvenida.
+2025-07-07 14:23:16,039 - DEBUG - Mensaje de bienvenida mostrado correctamente.
+2025-07-07 14:23:25,234 - INFO - Tarifas configuradas: Parado = 0.4, Movimiento = 0.6
+2025-07-07 14:23:27,583 - DEBUG - Opción seleccionada en el menú principal: I
+2025-07-07 14:23:27,583 - INFO - Trayecto iniciado.
+2025-07-07 14:23:30,436 - DEBUG - Estado introducido: P
+2025-07-07 14:23:30,436 - DEBUG - Calculando tarifa. Tiempo: 2.852909564971924, En movimiento: False
+2025-07-07 14:23:30,436 - DEBUG - Tarifa calculada: 1.1411638259887695
+2025-07-07 14:23:30,437 - INFO - Taxi en parado. Tarifa acumulada: 1.14 euros
+2025-07-07 14:23:33,016 - DEBUG - Estado introducido: M
+2025-07-07 14:23:33,016 - DEBUG - Calculando tarifa. Tiempo: 2.579883575439453, En movimiento: False
+2025-07-07 14:23:33,016 - DEBUG - Tarifa calculada: 1.0319534301757813
+2025-07-07 14:23:33,017 - INFO - Taxi en movimiento. Tarifa acumulada: 2.17 euros
+2025-07-07 14:23:37,628 - DEBUG - Estado introducido: F
+2025-07-07 14:23:37,628 - DEBUG - Calculando tarifa. Tiempo: 4.610935688018799, En movimiento: True
+2025-07-07 14:23:37,629 - DEBUG - Tarifa calculada: 2.766561412811279
+2025-07-07 14:23:37,629 - INFO - Trayecto finalizado. Tarifa total: 4.94 euros
+2025-07-07 14:23:37,630 - INFO - Trayecto guardado en historial correctamente.
+2025-07-07 14:23:37,630 - INFO - Trayecto iniciado. Total recaudado hasta ahora: 4.94 euros
+2025-07-07 14:23:39,586 - DEBUG - Opción seleccionada en el menú principal: S
+2025-07-07 14:23:39,587 - INFO - Saliendo del programa. Total recaudado: 4.94 euros
+2025-07-07 14:23:39,587 - INFO - Finalizando la función main().
