@@ -9,11 +9,11 @@ https://trello.com/b/0iNvlW2o/proyecto-taximetro
 
 **¿Cansado de calcular tarifas de taxi manualmente? ¡Nuestro Taxímetro digital es la solución!**
 
-Imagina un sistema sencillo e intuitivo que calcula automáticamente las tarifas de tus viajes en taxi, ¡sin errores ni complicaciones! Simplemente indica si el taxi está parado o en movimiento, y el programa calcula la tarifa total en base al tiempo transcurrido.
+Imagina un sistema sencillo e intuitivo que calcula automáticamente las tarifas de tus viajes en taxi, ¡sin errores ni complicaciones! Simplemente indica si el taxi está parado o en movimiento y las tarifas que se están aplicando, y el programa calcula la tarifa total en base al tiempo transcurrido.
 
 **¿Cómo funciona?**
 
-Es muy fácil de usar. El programa te guiará paso a paso, preguntándote si el taxi está parado o en movimiento. Se basa en tarifas por segundo: una tarifa para cuando el taxi está parado y otra para cuando está en movimiento. Al finalizar el viaje, el programa te mostrará la tarifa total. 
+Es muy fácil de usar. El programa te guiará paso a paso, preguntándote si el taxi está parado o en movimiento. Se basa en tarifas por segundo: una tarifa para cuando el taxi está parado y otra para cuando está en movimiento. Las puedes introducir tú mismo pero también hay unas por defecto. Al finalizar el viaje, el programa te mostrará la tarifa total. 
 
 **Beneficios Clave:**
 
@@ -29,42 +29,39 @@ Este programa simula un taxímetro. Permite calcular las tarifas de un trayecto 
 
 ## Características
 
-*   **Cálculo de tarifas:** Calcula la tarifa total basada en el tiempo transcurrido y el estado del taxi (parado o en movimiento).
-*   **Interfaz interactiva:**  Permite al usuario simular un trayecto, indicando si el taxi está parado o en movimiento.
+*   **Cálculo de tarifas:** Calcula la tarifa total basada en el tiempo transcurrido y el estado del taxi (parado o en movimiento). El usuario puede introducir las tarifas o usar las que están establecidas por defecto.
+*   **Interfaz interactiva:**  Permite al usuario simular un trayecto, indicando si el taxi está parado o en movimiento y qué tarifas se deben aplicar.
 *   **Registro de eventos (logging):** Utiliza el módulo `logging` para registrar información, advertencias y errores, facilitando el seguimiento del programa.
 *   **Menú principal:** Ofrece opciones para iniciar trayectos y salir del programa, mostrando el total recaudado.
 
 ## Fortalezas del código
 
-* **Modularidad:** El código está organizado en funciones bien definidas (mostrar_bienvenida, calcular_tarifa, iniciar_trayecto, main), lo que facilita la lectura, el mantenimiento y la reutilización del código. Cada función tiene una responsabilidad específica.
+* **Modularidad:** El código está organizado en funciones bien definidas (mostrar_bienvenida, configurar_tarifas, calcular_tarifa, guardar_en_historial, iniciar_trayecto, main), lo que facilita la lectura, el mantenimiento y la reutilización del código. Cada función tiene una responsabilidad específica.
 * **Uso de logging:** La integración del módulo logging permite registrar eventos durante la ejecución del programa, facilitando la depuración y el seguimiento del funcionamiento. Esto es especialmente útil para identificar errores o problemas.
 * **Manejo de errores:** El código incluye manejo de errores básicos, como la validación de la entrada del usuario.
 * **Legibilidad:** El código está bien comentado, lo que facilita su comprensión. Las variables y las funciones tienen nombres descriptivos.
 * **Funcionalidad básica:** El programa cumple con su objetivo principal de simular un taxímetro y calcular tarifas de forma básica.
+* **Historial de registros:** Se registran los viajes para poder hacer comparaciones.
+* **Flexibilidad:** Las tarifas pueden cambiar en función de la demanda.
 
 ## Debelidades del código
 
 * **Simulación básica:** La simulación del taxímetro es muy simple. No considera factores reales como el tráfico, las paradas adicionales, diferentes tarifas según la zona, etc.
-* **Falta de pruebas unitarias:** No se han incluido pruebas unitarias para verificar el correcto funcionamiento de las funciones. Esto aumenta el riesgo de errores y dificulta la detección de problemas.
-* **Manejo de errores limitado:** El manejo de errores es básico. No se manejan excepciones ni se implementan mecanismos más robustos para la gestión de errores.
+* **Manejo de errores limitado:** El manejo de errores es básico. Las excepciones se manejan solo en el historial y el cálculo de tarifas.
 * **Escalabilidad:** El código no está diseñado para ser escalable. No se considera la posibilidad de gestionar múltiples taxímetros o una gran cantidad de datos.
-* **Dependencia del tiempo:** El cálculo de la tarifa se basa en el tiempo real, lo que puede ser impreciso y depender de la velocidad de procesamiento del sistema.
-* **Falta de registros:** No se registran los viajes por lo que no se puede hacer comparaciones o reutlizar el mismo trayecto.
+* **Dependencia del tiempo:** El cálculo de la tarifa se basa en el tiempo real, lo que puede ser impreciso ya que depende de la velocidad de procesamiento del sistema.
 * **Seguridad:** No existe ningún sistema de contraseñas para proteger la información.
-* **Poca flexibilidad:** Los precios no se pueden adaptar a la demanda.
 * **Poca amigabilidad:** El taxímetro carece de una interfaz para interactuar con el usuario.
 
 ## Posibles mejoras
 
-* Implementar pruebas unitarias para asegurar la calidad del código.
 * Mejorar el manejo de errores, incluyendo la gestión de excepciones.
 * Añadir más funcionalidades para hacer la simulación más realista (tráfico, paradas, diferentes tarifas).
 * Mejorar la escalabilidad del código.
 * Considerar alternativas al uso del tiempo real para el cálculo de tarifas.
 * Crear una base de datos para guardar los registros.
 * Implementar un sistema de contraseñas.
-* Crear un sistema de precios flexibles en función de la demanda.
-* Desarrollar una interfaz gráfica para la web y la aplicación móvil.g
+* Desarrollar una interfaz gráfica para la web y la aplicación móvil.
 
 ## Requisitos
 
